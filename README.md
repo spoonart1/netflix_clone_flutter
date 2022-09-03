@@ -1,6 +1,10 @@
-# netflix_clone
+# Netflix clone project
 
-Netflix clone project
+<p>
+<img src="https://github.com/spoonart1/netflix_clone_flutter/blob/master/screenshots/Screenshot_20220903_162942.png" alt="InfiniteGraph Logo" width="140">
+<img src="https://github.com/spoonart1/netflix_clone_flutter/blob/master/screenshots/Screenshot_20220903_163000.png" alt="InfiniteGraph Logo" width="140">
+<img src="https://github.com/spoonart1/netflix_clone_flutter/blob/master/screenshots/Screenshot_20220903_163020.png" alt="InfiniteGraph Logo" width="140">
+<img src="https://github.com/spoonart1/netflix_clone_flutter/blob/master/screenshots/Screenshot_20220903_163033.png" alt="InfiniteGraph Logo" width="140">
 
 ## Getting Started
 
