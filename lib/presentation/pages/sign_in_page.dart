@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_clone/presentation/pages/home_page.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -48,20 +49,26 @@ class _SignInPageState extends State<SignInPage> {
   Widget _formWidget() {
     return Expanded(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         _makeContainer("Email or phone number", false),
         SizedBox(height: 10),
         _makeContainer("Password", true),
         SizedBox(height: 15),
-        Container(
-          alignment: Alignment.center,
-          padding: EdgeInsets.symmetric(vertical: 15),
-          width: double.maxFinite,
-          decoration: BoxDecoration(
-              color: Colors.transparent,
-              border: Border.all(color: Colors.grey[600]!, width: 2)),
-          child: Text("Sign In"),
+        InkWell(
+          onTap: () {
+            Navigator.pushAndRemoveUntil(
+                context, MaterialPageRoute(builder: (_) => const HomePage()), ModalRoute.withName('/Home'));
+          },
+          child: Container(
+            alignment: Alignment.center,
+            padding: EdgeInsets.symmetric(vertical: 15),
+            width: double.maxFinite,
+            decoration: BoxDecoration(
+                color: Colors.transparent,
+                border: Border.all(color: Colors.grey[600]!, width: 2)),
+            child: Text("Sign In"),
+          ),
         ),
         SizedBox(
           height: 15,
@@ -74,7 +81,9 @@ class _SignInPageState extends State<SignInPage> {
           "New to Netflix? Sign up now.",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
-        SizedBox(height: 20,),
+        SizedBox(
+          height: 20,
+        ),
         Text(
           "Sign-in is protected by Google reCAPTHA to ensure you're not a bot. Learn more",
           style: TextStyle(fontSize: 12),

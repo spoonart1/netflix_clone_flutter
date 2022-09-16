@@ -30,13 +30,14 @@ dependencies:
   flutter:
     sdk: flutter
 
-  dio: ^3.0.10
-  http: ^0.12.2
-  #state management
-  flutter_bloc: ^6.0.5
-  equatable: ^1.2.5
-  built_value: ^7.0.9
-  built_collection: ^4.3.2
+  retrofit: ^3.0.1+1
+  built_value: ^8.4.1
+  logger: ^1.0.0
+  dio: ^4.0.6
+  json_annotation: ^4.6.0
+  flutter_bloc: ^8.1.1
+  equatable: ^2.0.5
+  transparent_image: ^2.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -46,8 +47,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  built_value_generator: ^7.0.9
-  build_runner:
+
+  retrofit_generator: ^4.0.3+1
+  build_runner: ^2.2.0
+  json_serializable: ^6.3.1
+  built_value_generator: ^8.4.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
