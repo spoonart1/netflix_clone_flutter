@@ -7,6 +7,8 @@ import 'package:netflix_clone/service/image_service.dart';
 class DownloadPage extends StatelessWidget {
   const DownloadPage({Key? key}) : super(key: key);
 
+  final double iconSize = 25;
+
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
@@ -24,7 +26,7 @@ class DownloadPage extends StatelessWidget {
                 padding: EdgeInsets.all(8),
                 child: Row(
                   children: [
-                    Icon(Icons.info_outline, size: 30),
+                    Icon(Icons.info_outline, size: iconSize),
                     SizedBox(
                       width: 8,
                     ),
@@ -38,7 +40,7 @@ class DownloadPage extends StatelessWidget {
                       ],
                     )),
                     Container(
-                      child: Icon(Icons.edit_outlined, size: 30),
+                      child: Icon(Icons.edit_outlined, size: iconSize),
                     )
                   ],
                 ),
@@ -57,7 +59,7 @@ class DownloadPage extends StatelessWidget {
     for (int i = 0; i < downloads.length; i++) {
       var section = downloads[i];
       body.add(Row(children: [
-        Icon(Icons.person_3_rounded, size: 25),
+        Icon(Icons.person_3_rounded, size: iconSize),
         SizedBox(width: 4),
         Text(section.owner, style: TextStyle(fontSize: 16),)
       ]));

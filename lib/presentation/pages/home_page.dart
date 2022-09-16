@@ -31,10 +31,10 @@ class _HomePageState extends State<HomePage> {
               content: Text("Press back button again to Exit"),
               duration: Duration(seconds: 1));
           ScaffoldMessenger.of(context).showSnackBar(snack);
-          return Future.value(false);
+          return false;
         }
         RouterScreenStacks.clearStack();
-        return Future.value(true);
+        return true;
       },
       child: Scaffold(
           body: SingleChildScrollView(
